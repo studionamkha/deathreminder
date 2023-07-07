@@ -1,0 +1,54 @@
+/* basic normalisation of html, which is broken by default */
+body {
+  margin: 0px 0px;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* headers are anton font */
+h1, h2, h3, h3, h4, h5, h6 {
+  font-family: 'Anton', sans-serif;
+}
+
+/* text blocks are work sans */
+p, span {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* some utility classes to use in html */
+.font-anton {
+  font-family: 'Anton', sans-serif;
+}
+
+.font-worksans {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.font-200 {
+  font-weight: 200;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-900 {
+  font-weight: 900;
+}
+
+/* actual styles: */
+
+.bg {
+  background-color: #da3434;
+  color: #141414;
+  padding: 0px;
+}
+
+.main-header {
+  margin: 10px 20px;
+  font-size: 100px;
+}
