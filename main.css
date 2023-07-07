@@ -13,6 +13,7 @@ h1, h2, h3, h3, h4, h5, h6 {
 /* text blocks are work sans */
 p, span {
   font-family: 'Work Sans', sans-serif;
+  margin: 5px 10px;
 }
 
 /* some utility classes to use in html */
@@ -40,6 +41,9 @@ p, span {
   font-weight: 900;
 }
 
+.font-big {font-size: 3rem}
+.font-normal {font-size: 1.2rem}
+
 /* actual styles: */
 
 .bg {
@@ -49,8 +53,8 @@ p, span {
   background-size: 128px;
   color: #141414;
   padding: 0px;
-  animation: movebg 20s linear infinite;
-  -webkit-animation: movebg 20s linear infinite;
+  animation: movebg 10s linear infinite;
+  -webkit-animation: movebg 10s linear infinite;
   }
 
   @keyframes movebg {
@@ -60,15 +64,23 @@ p, span {
   }
   @-webkit-keyframes movebg {
     to {
-      background-position: 128px;
+      background-position: 27px;
     }
   }
 
 .main-header {
-  margin: 10px 40px;
-  font-size: 120px;
+  margin: 10px 30px;
+  font-size: 90px;
+  mix-blend-mode: hard-light;
+  color: #333;
 }
 
 .modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  box-shadow: 15px 15px #333;
   background-color: #a99997;
 }
