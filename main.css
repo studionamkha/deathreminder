@@ -44,11 +44,31 @@ p, span {
 
 .bg {
   background-color: #da3434;
+  background-image: url("assets/vector-blue-sine-wave-pattern-background-small.png");
+  background-blend-mode: soft-light;
+  background-size: 128px;
   color: #141414;
   padding: 0px;
-}
+  animation: movebg 20s linear infinite;
+  -webkit-animation: movebg 20s linear infinite;
+  }
+
+  @keyframes movebg {
+    to {
+      background-position: 0px;
+    }
+  }
+  @-webkit-keyframes movebg {
+    to {
+      background-position: 128px;
+    }
+  }
 
 .main-header {
-  margin: 10px 20px;
-  font-size: 100px;
+  margin: 10px 40px;
+  font-size: 120px;
+}
+
+.modal {
+  background-color: #a99997;
 }
