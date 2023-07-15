@@ -1,5 +1,5 @@
 <script>
-import '$lib/main.css'
+  import Modal from '$lib/components/Modal.svelte'
 </script>
 
   <div class="modal-wrapper">
