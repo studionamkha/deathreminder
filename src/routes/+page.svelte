@@ -1,6 +1,6 @@
-<svelte:head>
-<link rel="stylesheet" href='$lib/main.css' />
-</svelte:head>
+<script>
+import '$lib/main.css'
+</script>
 
   <div class="modal-wrapper">
     <div class="modal">

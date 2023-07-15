@@ -3,7 +3,32 @@ body {
   margin: 0px 0px;
   padding: 0;
   line-height: 1.5;
-}
+  background-color: #dedad3;
+  background-image: url("assets/vector-blue-sine-wave-pattern-background-small.png");
+  background-blend-mode: soft-light;
+  background-size: 128px;
+  color: #141414;
+  padding: 0px;
+  animation: movebg 10s linear infinite;
+  -webkit-animation: movebg 10s linear infinite;
+  }
+
+  @keyframes movebg {
+    from {
+      background-position-y: 0px;
+    }
+    to {
+      background-position-y: 27px;
+    }
+  }
+  @-webkit-keyframes movebg {
+    from {
+      background-position-y: 0px;
+    }
+    to {
+      background-position-y: 27px;
+    }
+  }
 
 /* headers are anton font */
 h1, h2, h3, h3, h4, h5, h6 {
@@ -46,33 +71,6 @@ p, span {
 
 /* actual styles: */
 
-.bg {
-  background-color: #dedad3;
-  background-image: url("assets/vector-blue-sine-wave-pattern-background-small.png");
-  background-blend-mode: soft-light;
-  background-size: 128px;
-  color: #141414;
-  padding: 0px;
-  animation: movebg 10s linear infinite;
-  -webkit-animation: movebg 10s linear infinite;
-  }
-
-  @keyframes movebg {
-    from {
-      background-position-y: 0px;
-    }
-    to {
-      background-position-y: 27px;
-    }
-  }
-  @-webkit-keyframes movebg {
-    from {
-      background-position-y: 0px;
-    }
-    to {
-      background-position-y: 27px;
-    }
-  }
 
 .main-header {
   margin: 10px 30px;
