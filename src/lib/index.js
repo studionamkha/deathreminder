@@ -199,6 +199,7 @@ export const sum = (factors) => {
 	}
 	return sum;
 };
+
 export const getAge = (factors, currentAge) => {
 	return sum(factors) - currentAge;
 };
