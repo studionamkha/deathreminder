@@ -28,3 +28,12 @@
 		</div>
 	</Modal>
 </div>
+
+<style>
+	input {
+		font-family: 'Work Sans', sans-serif;
+	}
+	button {
+		font-family: 'Work Sans', sans-serif;
+	}
+</style>
