@@ -94,7 +94,7 @@ p, span {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #eee;
+  background-color: #e5e5e5;
   max-height: 80vh;
   overflow-y: scroll;
   max-width: 1200px;
@@ -104,4 +104,44 @@ p, span {
   padding: 20px 40px;
   box-sizing: border-box;
   color: #000a;
+}
+
+.modal-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-left{
+  flex: 0;
+  text-align: left;
+}
+
+.footer-center{
+  flex: 1;
+  text-align: center;
+}
+
+.footer-right{
+  flex: 0;
+  text-align: right;
+}
+
+.btn{
+  border: 3px #d00d solid;
+  padding: 10px 20px;
+  font-weight: 600;
+  background-color: #5432;
+  color: #111;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 1em;
+}
+
+.btn:hover{
+  border: 3px #0002 solid;
+  background-color: #d55;
+  color: #eee;
 }
