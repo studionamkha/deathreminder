@@ -156,6 +156,17 @@ span {
 	font-size: 1em;
 }
 
+.btn {
+	border: 3px #e002 solid;
+	padding: 10px 20px;
+	font-weight: 600;
+	background-color: #3222;
+	color: #eee9;
+	cursor: pointer;
+	white-space: nowrap;
+	font-size: 1em;
+}
+
 input {
 	border: 3px #d003 solid;
 	padding: 10px 20px;

@@ -24,7 +24,7 @@
 			</p>
 		</div>
 		<div slot="footer-right">
-			<a href="/quiz"><button class="btn" id="right-button">Take the quiz</button></a>
+			<a href="/request"><button class="btn" id="right-button">web page permissions</button></a>
 		</div>
 	</Modal>
 </div>

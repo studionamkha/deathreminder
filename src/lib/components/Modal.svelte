@@ -1,5 +1,9 @@
+<script>
+	export let transparent = false;
+</script>
+
 <div class="modal-wrapper">
-	<div class="modal">
+	<div class="modal" class:transparent>
 		<slot name="main" />
 		<div class="modal-footer">
 			<slot name="footer" />
@@ -15,3 +19,10 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	.transparent {
+		background-color: transparent;
+		color: white;
+	}
+</style>

@@ -69,16 +69,20 @@
 		<div slot="footer-right">
 			{#if current < quiz.length - 1}
 				<button class="btn" on:click={clickNext}>next</button>
+			{:else}
+				<a href="result"><button class="btn">result</button></a>
 			{/if}
 		</div>
 	</Modal>
 </div>
 
+<!--
 <div class="float">
 	<p>factors: {factors}</p>
 	<p>age: {age}</p>
 	<p>expectancy: {getAge(factors, age)}</p>
 </div>
+-->
 
 <style>
 	.answers {
