@@ -2,7 +2,8 @@ export const quiz = [
 	{
 		id: 0,
 		type: 'number',
-		question: 'What is your current age'
+		question: 'What is your current age',
+		value: 18
 	},
 	{
 		id: 1,
@@ -19,7 +20,8 @@ export const quiz = [
 				answer: 'Female',
 				weight: 4
 			}
-		]
+		],
+		value: 1
 	},
 	{
 		id: 2,
@@ -36,7 +38,8 @@ export const quiz = [
 				answer: 'Yes',
 				weight: -10
 			}
-		]
+		],
+		value: 1
 	},
 	{
 		id: 3,
@@ -53,7 +56,8 @@ export const quiz = [
 				answer: 'Yes',
 				weight: -10
 			}
-		]
+		],
+		value: 1
 	},
 	{
 		id: 4,
@@ -90,7 +94,8 @@ export const quiz = [
 				answer: 'Asia',
 				weight: 79.2
 			}
-		]
+		],
+		value: 1
 	},
 	{
 		id: 5,
@@ -107,7 +112,8 @@ export const quiz = [
 				answer: 'No',
 				weight: 0
 			}
-		]
+		],
+		value: 1
 	},
 	{
 		id: 6,
@@ -139,7 +145,8 @@ export const quiz = [
 				answer: 'Widowed',
 				weight: -5
 			}
-		]
+		],
+		value: 1
 	},
 	{
 		id: 7,
@@ -171,7 +178,8 @@ export const quiz = [
 				answer: 'Doctorate',
 				weight: 4
 			}
-		]
+		],
+		value: 1
 	},
 	{
 		id: 8,
@@ -188,16 +196,17 @@ export const quiz = [
 				answer: 'No',
 				weight: -5
 			}
-		]
+		],
+		value: 1
 	}
 ];
 
 export const sum = (factors) => {
-	let sum = 0;
+	let s = 0;
 	for (let factor of factors) {
-		sum += factor;
+		s += factor;
 	}
-	return sum;
+	return s;
 };
 
 export const getAge = (factors, currentAge) => {

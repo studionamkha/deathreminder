@@ -1,5 +1,5 @@
 <script>
-	import { quiz } from '$lib/index.js';
+	import { quiz, getAge } from '$lib/index.js';
 	import Modal from '$lib/components/Modal.svelte';
 
 	let current = 0;
@@ -7,39 +7,57 @@
 	function clickPrevious() {
 		if (current !== 0) {
 			current -= 1;
+			factors = findFactors(quiz);
 		}
 	}
 	function clickNext() {
 		if (current < quiz.length - 1) {
 			current += 1;
+			factors = findFactors(quiz);
 		}
 	}
 
-	$: q = quiz[current];
+	$: currentQuestion = quiz[current];
+	$: age = quiz.find((_) => _.id === 0).value;
+	$: factors = findFactors(quiz);
+	function findFactors(quizToFilter) {
+		return quizToFilter
+			.filter((q) => q.id !== 0)
+			.map((q) => q.answers.find((a) => a.id === q.value).weight);
+	}
 </script>
 
 <div class="bg">
 	<Modal>
 		<div slot="main">
-			<fieldset>
-				<legend class="font-worksans font-big font-600">
-					{q.question}
-				</legend>
-				<div class="answers">
-					{#if q.type === 'radio'}
-						{#each q.answers as a}
-							<div>
-								<input type="radio" id={a.id} name={q.id} value={a.id} />
-								<label for={a.id}>{a.answer}</label>
-							</div>
-						{/each}
-					{/if}
+			<legend class="font-worksans font-big font-600">
+				{currentQuestion.question}
+			</legend>
+			<div class="answers">
+				{#if currentQuestion.type === 'radio'}
+					{#each currentQuestion.answers as a}
+						<div>
+							<input
+								type="radio"
+								id={a.id}
+								name={currentQuestion.id}
+								value={a.id}
+								bind:group={currentQuestion.value}
+								on:change={() => (factors = findFactors(quiz))}
+							/>
+							<label for={a.id}>{a.answer}</label>
+						</div>
+					{/each}
+				{/if}
 
-					{#if q.type === 'number'}
-						<input type="number" />
-					{/if}
-				</div>
-			</fieldset>
+				{#if currentQuestion.type === 'number'}
+					<input
+						type="number"
+						bind:value={currentQuestion.value}
+						on:change={() => (age = quiz[0].value)}
+					/>
+				{/if}
+			</div>
 		</div>
 		<div slot="footer-left">
 			{#if current > 0}
@@ -56,10 +74,24 @@
 	</Modal>
 </div>
 
+<div class="float">
+	<p>factors: {factors}</p>
+	<p>age: {age}</p>
+	<p>expectancy: {getAge(factors, age)}</p>
+</div>
+
 <style>
 	.answers {
 		padding: 10px;
 		font-family: 'Work Sans', sans-serif;
+	}
+	.float {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		background-color: white;
+		border: 3px solid #3333;
+		padding: 15px;
 	}
 	input {
 		font-family: 'Work Sans', sans-serif;
