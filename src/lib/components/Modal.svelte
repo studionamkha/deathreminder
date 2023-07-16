@@ -3,7 +3,7 @@
 </script>
 
 <div class="modal-wrapper">
-	<div class="modal" class:transparent>
+	<div class="modal" class:modal-transparent={transparent}>
 		<slot name="main" />
 		<div class="modal-footer">
 			<slot name="footer" />
@@ -19,10 +19,3 @@
 		</div>
 	</div>
 </div>
-
-<style>
-	.transparent {
-		background-color: transparent;
-		color: white;
-	}
-</style>

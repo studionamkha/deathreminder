@@ -118,6 +118,12 @@ span {
 	box-sizing: border-box;
 	color: #000a;
 	transition: 1s ease;
+	border-radius: 10px;
+}
+
+.modal-transparent {
+	background-color: #0002;
+	color: white;
 }
 
 .modal-footer {
@@ -146,6 +152,7 @@ span {
 }
 
 .btn {
+	border-radius: 10px;
 	border: 3px #d003 solid;
 	padding: 10px 20px;
 	font-weight: 600;
@@ -156,18 +163,19 @@ span {
 	font-size: 1em;
 }
 
-.btn {
+.btn-transparent {
 	border: 3px #e002 solid;
 	padding: 10px 20px;
-	font-weight: 600;
-	background-color: #3222;
-	color: #eee9;
+	font-weight: 800;
+	background-color: #3228;
+	color: #eeeb;
 	cursor: pointer;
 	white-space: nowrap;
 	font-size: 1em;
 }
 
 input {
+	border-radius: 10px;
 	border: 3px #d003 solid;
 	padding: 10px 20px;
 	font-weight: 600;
