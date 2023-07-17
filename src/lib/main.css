@@ -118,11 +118,11 @@ span {
 	box-sizing: border-box;
 	color: #000a;
 	transition: 1s ease;
-	border-radius: 10px;
+	border-radius: 0px;
 }
 
 .modal-transparent {
-	background-color: #0002;
+	background-color: transparent;
 	color: white;
 }
 
@@ -152,7 +152,7 @@ span {
 }
 
 .btn {
-	border-radius: 10px;
+	border-radius: 0px;
 	border: 3px #d003 solid;
 	padding: 10px 20px;
 	font-weight: 600;
@@ -175,7 +175,7 @@ span {
 }
 
 input {
-	border-radius: 10px;
+	border-radius: 0px;
 	border: 3px #d003 solid;
 	padding: 10px 20px;
 	font-weight: 600;
