@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
 	import Modal from '$lib/components/Modal.svelte';
 	import { onMount } from 'svelte';
 	onMount(() => {
@@ -21,10 +22,10 @@
 			</p>
 		</div>
 		<div slot="footer-left">
-			<a href="/"><button class="btn">About project</button></a>
+			<a href="{base}/"><button class="btn">About project</button></a>
 		</div>
 		<div slot="footer-right">
-			<a href="/quiz"><button class="btn">Take the quiz</button></a>
+			<a href="{base}/quiz"><button class="btn">Take the quiz</button></a>
 		</div>
 	</Modal>
 </div>

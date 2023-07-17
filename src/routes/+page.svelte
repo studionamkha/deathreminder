@@ -1,5 +1,6 @@
 <script>
-	import Modal from '$lib/components/Modal.svelte';
+  import { base } from '$app/paths';
+  import Modal from '$lib/components/Modal.svelte';
 </script>
 
 <div class="bg">
@@ -24,7 +25,7 @@
 			</p>
 		</div>
 		<div slot="footer-right">
-			<a href="/request"><button class="btn" id="right-button">web page permissions</button></a>
+      <a href="{base}/request"><button class="btn" id="right-button">web page permissions</button></a>
 		</div>
 	</Modal>
 </div>

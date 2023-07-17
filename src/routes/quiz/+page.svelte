@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
 	import { quiz, getAge } from '$lib/index.js';
 	import Modal from '$lib/components/Modal.svelte';
 
@@ -63,14 +64,14 @@
 			{#if current > 0}
 				<button class="btn" on:click={clickPrevious}>previous</button>
 			{:else}
-				<a href="/"><button class="btn" id="right-button">About the project</button></a>
+        <a href="{base}/"><button class="btn" id="right-button">About the project</button></a>
 			{/if}
 		</div>
 		<div slot="footer-right">
 			{#if current < quiz.length - 1}
 				<button class="btn" on:click={clickNext}>next</button>
 			{:else}
-				<a href="result"><button class="btn">result</button></a>
+				<a href="{base}/result"><button class="btn">result</button></a>
 			{/if}
 		</div>
 	</Modal>

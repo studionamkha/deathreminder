@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
 	import Modal from '$lib/components/Modal.svelte';
 	import { quiz, getAge } from '$lib/index.js';
 	import BackgroundCamera from '../../lib/components/BackgroundCamera.svelte';
@@ -30,7 +31,7 @@
 			</p>
 		</div>
 		<div slot="footer-left">
-			<a href="/quiz"><button class="btn btn-transparent">Take the quiz again</button></a>
+			<a href="{base}/quiz"><button class="btn btn-transparent">Take the quiz again</button></a>
 		</div>
 		<div slot="footer-right">
 			<button class="btn btn-transparent">Share result</button>
