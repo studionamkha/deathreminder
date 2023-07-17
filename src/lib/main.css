@@ -9,7 +9,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: #dedad3;
-	background-image: url('assets/vector-blue-sine-wave-pattern-background-small.png');
+	background-image: url('/assets/vector-blue-sine-wave-pattern-background-small.png');
 	background-blend-mode: soft-light;
 	background-size: 128px;
 	color: #141414;
