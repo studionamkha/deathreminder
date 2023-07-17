@@ -37,3 +37,4 @@ npm run build
 and put result into gh-pages branch, which is server at [`studionamkha.github.io/deathreminder`](https://studionamkha.github.io/deathreminder)
 
 this is github actions setup, file is avalible at .github/workflows
+---
