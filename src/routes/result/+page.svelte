@@ -1,5 +1,5 @@
 <script>
-  import { base } from '$app/paths';
+	import { base } from '$app/paths';
 	import Modal from '$lib/components/Modal.svelte';
 	import { quiz, getAge } from '$lib/index.js';
 	import BackgroundCamera from '../../lib/components/BackgroundCamera.svelte';
