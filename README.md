@@ -6,6 +6,7 @@ first change - from agamurian balalals
 second change - katya was here
 
 ---
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
@@ -28,13 +29,15 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 ---
+
 ## Deployment
 
 on every push on main, github actions will run
+
 ```bash
-npm run build 
+npm run build
 ```
+
 and put result into gh-pages branch, which is server at [`studionamkha.github.io/deathreminder`](https://studionamkha.github.io/deathreminder)
 
-this is github actions setup, file is avalible at .github/workflows
----
+## this is github actions setup, file is avalible at .github/workflows

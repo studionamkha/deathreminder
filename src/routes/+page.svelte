@@ -6,9 +6,7 @@
 <div class="bg">
 	<Modal>
 		<div slot="main">
-			<p class="font-worksans font-big font-900" id="header">
-				<nobr>Project concept: Death Reminder</nobr>
-			</p>
+			<p class="font-worksans font-big font-900" id="header">Project concept: Death Reminder</p>
 			<p class="font-worksans font-normal" id="content">
 				Buddhists try to contemplate death every day and gain an awareness of death.<br /><br />
 				The inexorable matter of impermanence and death within every life is very present in the Buddha’s
