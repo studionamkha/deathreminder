@@ -11,10 +11,10 @@
 <div class="bg">
 	<Modal>
 		<div slot="main">
-			<p class="font-worksans font-big font-900" id="header">
+			<p class="font-bold" id="header">
 				<nobr>Allow permissions</nobr>
 			</p>
-			<p class="font-worksans font-normal" id="content">
+			<p class="font-normal" id="content">
 				<br />
 				For better results and expierience please allow this page to use your camera and send you notifications.
 				<br />

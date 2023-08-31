@@ -31,7 +31,7 @@
 <div class="bg">
 	<Modal>
 		<div slot="main">
-			<legend class="font-big font-600">
+			<legend class="font-big font-bold">
 				{currentQuestion.question}
 			</legend>
 			<div class="answers">
@@ -119,13 +119,13 @@
 		height: 20px;
 		border-radius: 10px;
 		box-sizing: border-box;
-		border: 3px solid #5004;
+		border: 3px solid #a00a;
 		background-color: transparent;
 	}
 
 	input[type='radio']:checked + label:before {
 		position: relative;
-		border: 3px solid #5004;
+		border: 3px solid #a00a;
 		box-sizing: border-box;
 		border-radius: 10px;
 		width: 20px;

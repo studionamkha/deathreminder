@@ -20,13 +20,13 @@
 <BackgroundCamera>
 	<Modal transparent={true}>
 		<div slot="main">
-			<p class="font-600" style="font-size: 1.5em;">
+			<p class="font-bold font-big" style="font-size: 1.5em;">
 				expected time left for {formatToDay(date)}:
 			</p>
 			<p class="font-big" id="header">
 				<nobr
-					><span class="font-900">{getAge(factors, age)}</span>
-					<span class="font-600">years</span></nobr
+					><span class="font-bold">{getAge(factors, age)}</span>
+					<span class="font-bold">years</span></nobr
 				>
 			</p>
 		</div>

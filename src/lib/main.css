@@ -3,19 +3,15 @@ body {
 	margin: 0px 0px;
 	padding: 0;
 	line-height: 1.5;
+	font-family: Cousine, monospace;
 }
 .bg {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background-color: #dedad3;
-	background-image: url('/assets/vector-blue-sine-wave-pattern-background-small.png');
-	background-blend-mode: soft-light;
-	background-size: 128px;
-	color: #141414;
+	background-color: #000000;
+	color: #eeeeee;
 	padding: 0px;
-	animation: movebg 10s linear infinite;
-	-webkit-animation: movebg 10s linear infinite;
 }
 
 @keyframes movebg {
@@ -42,9 +38,6 @@ span {
 }
 
 /* some utility classes to use in html */
-.font-worksans {
-	font-family: 'Work Sans', sans-serif;
-}
 
 .font-200 {
 	font-weight: 200;
@@ -75,7 +68,7 @@ span {
 	margin: 10px 30px;
 	font-size: 90px;
 	mix-blend-mode: hard-light;
-	color: #333;
+	color: #fff;
 }
 
 .modal-wrapper {
@@ -91,7 +84,7 @@ span {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	background-color: #e5e5e5;
+	background-color: #000;
 	max-height: 80vh;
 	overflow-y: scroll;
 	max-width: 1200px;
@@ -100,13 +93,14 @@ span {
 	justify-self: center;
 	padding: 20px 40px;
 	box-sizing: border-box;
-	color: #000a;
+	color: #eee;
 	transition: 1s ease;
 	border-radius: 0px;
+	border: 3px #d006 solid;
 }
 
 .modal-transparent {
-	background-color: transparent;
+	background-color: #0006;
 	color: white;
 }
 
@@ -137,18 +131,19 @@ span {
 
 .btn {
 	border-radius: 0px;
-	border: 3px #d003 solid;
+	border: 3px #d006 solid;
 	padding: 10px 20px;
 	font-weight: 600;
 	background-color: #5432;
-	color: #111;
+	color: #eee;
 	cursor: pointer;
 	white-space: nowrap;
 	font-size: 1em;
+	font-family: Cousine, monospace;
 }
 
 .btn-transparent {
-	border: 3px #e002 solid;
+	border: 3px #e006 solid;
 	padding: 10px 20px;
 	font-weight: 800;
 	background-color: #3228;
@@ -160,18 +155,19 @@ span {
 
 input {
 	border-radius: 0px;
-	border: 3px #d003 solid;
+	border: 3px #d006 solid;
 	padding: 10px 20px;
 	font-weight: 600;
 	background-color: #5432;
-	color: #111;
+	color: #eee;
 	cursor: pointer;
 	white-space: nowrap;
 	font-size: 1em;
+	font-family: Cousine, monospace;
 }
 
 .btn:hover {
-	border: 3px #0002 solid;
+	border: 3px #0006 solid;
 	background-color: #d55;
 	color: #eee;
 }
@@ -198,5 +194,6 @@ input {
 		overflow-y: scroll;
 		max-width: 100%;
 		margin: 0px;
+		border: 3px #d003 solid;
 	}
 }
