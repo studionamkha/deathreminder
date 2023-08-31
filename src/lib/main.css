@@ -39,22 +39,9 @@ span {
 
 /* some utility classes to use in html */
 
-.font-200 {
-	font-weight: 200;
+.font-bold {
+	font-weight: 700;
 }
-
-.font-400 {
-	font-weight: 400;
-}
-
-.font-600 {
-	font-weight: 600;
-}
-
-.font-900 {
-	font-weight: 900;
-}
-
 .font-big {
 	font-size: 3rem;
 }
