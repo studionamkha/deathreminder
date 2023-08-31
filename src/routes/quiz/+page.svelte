@@ -31,7 +31,7 @@
 <div class="bg">
 	<Modal>
 		<div slot="main">
-			<legend class="font-worksans font-big font-600">
+			<legend class="font-big font-600">
 				{currentQuestion.question}
 			</legend>
 			<div class="answers">
@@ -88,7 +88,6 @@
 <style>
 	.answers {
 		padding: 10px;
-		font-family: 'Work Sans', sans-serif;
 	}
 	.float {
 		position: fixed;
@@ -99,14 +98,10 @@
 		padding: 15px;
 	}
 	input {
-		font-family: 'Work Sans', sans-serif;
 		font-size: 1em;
 	}
 	input:focus {
 		outline: 3px solid #dd02;
-	}
-	button {
-		font-family: 'Work Sans', sans-serif;
 	}
 
 	input[type='radio'] {

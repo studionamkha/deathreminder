@@ -20,10 +20,10 @@
 <BackgroundCamera>
 	<Modal transparent={true}>
 		<div slot="main">
-			<p class="font-worksans font-600" style="font-size: 1.5em;">
+			<p class="font-600" style="font-size: 1.5em;">
 				expected time left for {formatToDay(date)}:
 			</p>
-			<p class="font-worksans font-big" id="header">
+			<p class="font-big" id="header">
 				<nobr
 					><span class="font-900">{getAge(factors, age)}</span>
 					<span class="font-600">years</span></nobr
@@ -38,9 +38,3 @@
 		</div>
 	</Modal>
 </BackgroundCamera>
-
-<style>
-	button {
-		font-family: 'Work Sans', sans-serif;
-	}
-</style>

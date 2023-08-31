@@ -29,9 +29,3 @@
 		</div>
 	</Modal>
 </div>
-
-<style>
-	button {
-		font-family: 'Work Sans', sans-serif;
-	}
-</style>

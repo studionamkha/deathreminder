@@ -35,29 +35,13 @@ body {
 	}
 }
 
-/* headers are anton font */
-h1,
-h2,
-h3,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Anton', sans-serif;
-}
-
 /* text blocks are work sans */
 p,
 span {
-	font-family: 'Work Sans', sans-serif;
 	margin: 5px 10px;
 }
 
 /* some utility classes to use in html */
-.font-anton {
-	font-family: 'Anton', sans-serif;
-}
-
 .font-worksans {
 	font-family: 'Work Sans', sans-serif;
 }
