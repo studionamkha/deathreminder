@@ -10,9 +10,9 @@
 
 	const sketch = (p5) => {
 		p5.setup = () => {
-			a = p5.random(0, 255);
-			b = p5.random(0, 255);
-			c = p5.random(0, 255);
+			a = 255;
+			b = 255;
+			c = 255;
 			p5.createCanvas(width, height);
 			p5.noStroke();
 			cam = p5.createCapture(p5.VIDEO);
@@ -29,7 +29,7 @@
 				for (let x = 0; x < width; x += stepSize) {
 					const i = y * width + x;
 					const darkness = (255 - cam.pixels[i * 4]) / 255;
-					const radius = stepSize * darkness;
+					const radius = stepSize * darkness * 0.5;
 					p5.circle(x, y, radius, radius);
 				}
 			}
