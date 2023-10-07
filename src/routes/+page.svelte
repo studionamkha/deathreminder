@@ -6,20 +6,12 @@
 <div class="bg">
 	<Modal>
 		<div slot="main">
-			<p class="font-worksans font-big font-900" id="header">Project concept: Death Reminder</p>
+			<p class="font-worksans font-big font-900" id="header">I May Die Today</p>
 			<p class="font-worksans font-normal" id="content">
-				Buddhists try to contemplate death every day and gain an awareness of death.<br /><br />
-				The inexorable matter of impermanence and death within every life is very present in the Buddha’s
-				teachings. Is this a cause for despondency? Not necessarily, the Buddha says. We can ignore or
-				reject this truth and remain trapped in delusion, fear, and suffering. <br /><br />
-				Or we can remember it, know it, and practice with it all the way to liberation. For instance,
-				in one of the Buddha’s discourses, monks are urged to consider before they retire at night that
-				they may not live until morning. Possible causes of death are cited (including indigestion and
-				scorpions).
+        Your personal death clock counts down your time left on Earth.
+        A serial reminder that time is not on our side. Time is indifferent.
+        Life is limited. Your age, gender, screen time and other vices become your personal expiration date.
 				<br /><br />
-				If death were near, what would their state of mind be? What lingering mental or emotional concerns
-				should they have addressed while there was still time? Could they face death with confidence,
-				knowing they had given their all to awakening?
 			</p>
 		</div>
 		<div slot="footer-right">
